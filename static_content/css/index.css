@@ -42,35 +42,15 @@
         margin: 8px;
     }
 
-    .top--position{
-        margin: 8px;
-    }
-    
-    .flex-1{
-        align-items: center;
-        background-color: rgb(51, 83, 131);
-        display: flex;
-        flex-direction: row;
-        padding: 8px;
-    }
-
-    .btn--opera{
-        color: rgb(250, 250, 250);
-        display: flex;
-        padding: 0 8px 0 8px;
-        text-decoration: none;
-    }
-
-    .btn--opera:hover {
-        color:black;
-        transition: 500ms;
-    }
-
     .contact--session{
         align-items: center;
         color: #4f4f4f;
         display: flex;
         flex-direction: row;
+    }
+
+    .contact--label{
+        display: flex;
     }
 
     .btn--green{
@@ -106,19 +86,34 @@
     .btn--img{
         width: 20px;
     }
+    
+    .flex-1{
+        align-items: center;
+        background-color: rgb(51, 83, 131);
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+    }
+
+    .btn--opera{
+        color: rgb(250, 250, 250);
+        display: flex;
+        padding: 0 8px 0 8px;
+        text-decoration: none;
+    }
+
+    .btn--opera:hover {
+        color:black;
+        transition: 500ms;
+    }
 
     .flex-2{
         align-items: stretch;
         display: flex;
         flex-direction: column;
     }
-    
-    #lknMail{
-        cursor: pointer;
-    }
 
     .content--session{
-        /* background-color: rgb(250, 250, 250); */
         background-color: #087ab8;
         color: rgb(250, 250, 250);
         display: flex;
@@ -126,45 +121,6 @@
         padding: 0px;
         text-align: center;
         top: 0;
-    }
-
-    .operadora--amil{
-        height: 372px;
-    }
-
-    .content--session__amil{
-        background-color: rgb(250, 250, 250);
-        color: #4f4f4f;
-        display: flex;
-        flex-direction: row;
-        padding: 24px;
-        text-align: center;
-        top: 0;
-    }
-
-    .content--amil__title{
-        font-size: 16px;
-        margin: 0;
-        margin-top: 4px;
-        padding-left: 8px;
-        text-align: left;
-    }
-
-    .content--amil__margin{
-        font-size: 14px;
-        margin: 0;
-        margin-top: 4px;
-        padding-left: 8px;
-        text-align: left;
-    }
-
-    .content--amil__price{
-        color: black;
-        margin: 0;
-        margin-top: 4px;
-        padding-left: 8px;
-        text-align: left;
-        font-weight: bold;
     }
 
     .content--intro{
@@ -176,10 +132,6 @@
         width: 100%;
     }
 
-    .content--amil{
-        display: flex;
-    }
-
     .content--intro__impact{
         font-size: 32px;
         margin: 0;
@@ -189,13 +141,8 @@
 
     .content--intro__margin{
         margin: 0;
-        margin-top: 4px;
+        margin-top: 16px;
         text-align: left;
-    }
-
-    .content--img__reducer{
-        padding-left: 8px;
-        width: 300px;
     }
 
     .intro--img__reducer{
@@ -204,15 +151,56 @@
         width: 50%;
     }
 
-    .content--name{
-        color:rgb(51, 83, 131);
-        font-family: Helvetica;
-        font-weight: bold;
-        font-size: 32px;
+    .photo--credits{
+        color: #4f4f4f;
+        cursor: none !important;
+        font-size: 10px;
+        text-align: right;
+        text-decoration: none!important;
+    }
+
+    .content--session__operadoras{
+        background-color: rgb(250, 250, 250);
+        color: #4f4f4f;
+        display: flex;
+        flex-direction: row;
+        padding: 24px;
+        text-align: center;
+        top: 0;
+    }
+
+    .content--img__reducer{
+        padding-left: 8px;
+        width: 300px;
+    }
+
+    .content--operadoras{
+        display: flex;
+    }
+
+    .content--operadoras__title{
+        font-size: 16px;
+        margin: 0;
+        margin-top: 4px;
         padding-left: 8px;
         text-align: left;
-        margin-top: 40px;
-        margin-bottom: 0;
+    }
+
+    .content--operadoras__margin{
+        font-size: 14px;
+        margin: 0;
+        margin-top: 4px;
+        padding-left: 8px;
+        text-align: left;
+    }
+
+    .content--operadoras__price{
+        color: black;
+        margin: 0;
+        margin-top: 4px;
+        padding-left: 8px;
+        text-align: left;
+        font-weight: bold;
     }
 
     .content--finale{
@@ -228,6 +216,12 @@
     .money{
         text-decoration: none;
     }
+
+    a:-webkit-any-link{
+        text-decoration: none!important;
+        /* color: #4f4f4f; */
+    }
+
 }
 
 .blink {
@@ -248,4 +242,251 @@
 /*telas grandes */
 @media screen and (max-width: 1023px) {
  
+    html, body {
+        font-family: Helvetica;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body{
+        align-items: center;
+        border: 8;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top--position__container{
+        background-color: rgb(250, 250, 250);
+        color: rgb(250, 250, 250);
+        display: flex;
+        flex-direction: row;
+        
+        height: 100px;
+        min-width: 100%;
+    }
+
+    .top--name{
+        align-items: center;
+        color:#4f4f4f;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    .contact--session{
+        align-items: center;
+        color: #4f4f4f;
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+    }
+
+    .contact--label{
+        display: none;
+    }
+
+    .btn--green{
+        background-color: #F2994A;
+        border-radius: 6px;
+        color:rgb(250, 250, 250);
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        margin: 0 4px 0 4px;
+        padding: 10px;
+        position: relative;
+        text-decoration: none;
+        width: 100px;
+    }
+
+    .btn--green__fixed{
+        background-color: #F2994A;
+        border-radius: 6px;
+        /* bottom: 36px; */
+        color:rgb(250, 250, 250);
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        margin: 0 4px 0 4px;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        text-decoration: none;
+        width: 100px;    
+    }
+
+    .btn--img{
+        width: 20px;
+    }
+    
+    .flex-1{
+        align-items: center;
+        background-color: rgb(51, 83, 131);
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+    }
+
+    .btn--opera{
+        color: rgb(250, 250, 250);
+        display: flex;
+        padding: 0 8px 0 8px;
+        text-decoration: none;
+    }
+
+    .btn--opera:hover {
+        color:black;
+        transition: 500ms;
+    }
+
+    .flex-2{
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content--session{
+        background-color: #087ab8;
+        color: rgb(250, 250, 250);
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        text-align: center;
+        top: 0;
+    }
+
+    .content--intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 16px;
+        width: 100%;
+    }
+
+    .content--intro__impact{
+        font-size: 28px;
+        margin: 0;
+        margin-top: 4px;
+        text-align: justify;
+    }
+
+    .content--intro__margin{
+        margin: 0;
+        margin-top: 32px;
+        text-align: justify;
+    }
+
+    .content--intro__margin ~ .content--intro__margin{
+        margin: 0;
+        margin-top: 4px;
+        text-align: left;
+    }
+
+    .intro--img__reducer{
+        display: none;
+        padding-left: 8px;
+        max-height: 500px;
+        width: 20%;
+    }
+
+    .photo--credits{
+        color: #4f4f4f;
+        cursor: none !important;
+        display: none;
+        font-size: 10px;
+        text-align: right;
+        text-decoration: none!important;
+    }
+
+    .content--session__operadoras{
+        background-color: rgb(250, 250, 250);
+        color: #4f4f4f;
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+        text-align: center;
+        top: 0;
+    }
+
+    .content--img__reducer{
+        display: none;
+        height: 223px;
+        padding-left: 4px;
+        width: 150px;
+    }
+
+    .content--operadoras{
+        display: flex;
+    }
+
+    .content--operadoras__title{
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 4px;
+        padding-left: 8px;
+        text-align: left;
+    }
+
+    .content--operadoras__margin{
+        font-size: 14px;
+        margin: 0;
+        margin-top: 4px;
+        padding-left: 8px;
+        text-align: left;
+    }
+
+    .content--operadoras__price{
+        color: black;
+        margin: 0;
+        margin-top: 4px;
+        padding-left: 8px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .content--finale{
+        align-items: center;
+        background-color: rgb(51, 83, 131);
+        color:rgb(250, 250, 250);
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .money{
+        text-decoration: none;
+    }
+
+    a:-webkit-any-link{
+        text-decoration: none!important;
+        /* color: #4f4f4f; */
+    }
+
+
+    .blink {
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+    }
+    @-webkit-keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
 }
