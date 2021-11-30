@@ -18,12 +18,13 @@ function scrollFunction() {
         document.getElementById("btnWhats").classList.remove("btn--green");
         document.getElementById("btnWhats").classList.add("btn--green__fixed");
         document.getElementById("btnWhats").style.top = document.documentElement.scrollTop + 16 + "px";
-        console.log(document.documentElement.scrollTop);
+        document.getElementById("btnWhats").style.width = "100px";
     } else {
         document.getElementById("btnWhats").style.display = "flex";
         document.getElementById("btnWhats").classList.remove("btn--green__fixed");
         document.getElementById("btnWhats").classList.add("btn--green");
-        document.getElementById("btnWhats").style.top = null;
+        document.getElementById("btnWhats").style.top = 0;
+        document.getElementById("btnWhats").style.width = "100px";
     }
     
 }
